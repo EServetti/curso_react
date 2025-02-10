@@ -1,0 +1,26 @@
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.nav-bar-routes {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.nav-bar-routes li {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.nav-bar-logo {
+    width: 10%;
+}
+
+
+

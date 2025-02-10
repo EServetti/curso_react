@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.main {
+  background-color: #192b7d;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  color: white;
+}
+
+button {
+  background-color: #192b7d;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  padding: 5px 10px 5px 10px;
+}

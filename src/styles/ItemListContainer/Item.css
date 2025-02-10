@@ -1,0 +1,12 @@
+.item {
+    background-color: #4e56ae;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.item img {
+    width: 50%;
+}
