@@ -1,5 +1,26 @@
-.item-list-container {
+.main-item-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.item-list-container-three {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.item-list-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.filter-bar {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
     gap: 15px;
 }

@@ -5,8 +5,37 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.item:hover {
+    opacity: 0.8;
+}
+
+.image_container {
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item img {
-    width: 50%;
+    width: 100%;
+}
+
+.on_sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    left: -12px;
+    width: 120px;
+    background-color: red;
+    transform: rotate(-30deg);
 }

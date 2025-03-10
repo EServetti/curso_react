@@ -1,15 +1,17 @@
-import "../../styles/ItemListContainer/Item.css"
+import "../../styles/ItemListContainer/Item.css";
 
-const Item = ({name, photo, description, price}) => {
-    return (
-        <div className="item">
-            <img src={photo} alt="image" />
-            <h3>{name || "Name not provided"} </h3>
-            <p>{description || "Description not provided"}</p>
-            <p>${price || "No price"}</p>
-            <button>Add to cart</button>
-        </div>
-    )
-}
+const Item = ({ name, photo, onSale }) => {
+  return (
+    <div className="item">
+      {onSale && (
+        <span className="on_sale">On Sale!</span>
+      )}
+      <span className="image_container">
+        <img src={photo} alt="image" />
+      </span>
+      <h3>{name || "Name not provided"} </h3>
+    </div>
+  );
+};
 
-export default Item
+export default Item;
