@@ -10,7 +10,11 @@ const ItemDetails = () => {
   return (
     <div className="main-item-details">
       {loading ? (
-        <span style={{position: "absolute", top: "50%", right: "50%"}}>Loading...</span>
+        <span style={{ position: "absolute", top: "50%", right: "50%" }}>
+          Loading...
+        </span>
+      ) : !game ? (
+        <span style={{position: "absolute", top: "50%", width: "100%", textAlign: "center"}}>Sorry the game you're looking for does not exist.</span>
       ) : (
         <>
           <img className="game-image" src={game.photo} alt="image" />

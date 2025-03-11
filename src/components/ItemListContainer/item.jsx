@@ -3,7 +3,7 @@ import "../../styles/ItemListContainer/Item.css";
 
 const Item = ({ id,name, thumbnail, onSale }) => {
   return (
-    <Link className="item" to={`/${id}`} >
+    <Link className="item" to={`/product/${id}`} >
       {onSale && (
         <span className="on_sale">On Sale!</span>
       )}

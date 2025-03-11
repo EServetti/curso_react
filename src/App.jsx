@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar/navBar";
 import ItemListContainer from "./components/ItemListContainer/itemListContainer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ItemDetails from "./components/ItemDetails/itemDetails";
+import NotFound from "./components/notFound";
 
 function App() {
   const [page, setPage] = useState("home")
@@ -14,7 +15,8 @@ function App() {
         <NavBar setPage={setPage}/>
         <Routes>
           <Route path="/" element={<ItemListContainer page={page}/>} />
-          <Route path="/:id" element={<ItemDetails/>} />
+          <Route path="/product/:id" element={<ItemDetails/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </div>
     </Router>
