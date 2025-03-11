@@ -5,6 +5,10 @@
     justify-content: flex-start;
 }
 
+.main-item-list-container a {
+    color: white;
+}
+
 .item-list-container-three {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -22,5 +26,5 @@
     padding: 10px;
     display: flex;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 25px;
 }

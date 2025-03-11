@@ -1,6 +1,6 @@
 import "../../styles/ItemListContainer/searchBox.css"
 
-const SearchBox = ({setInputValue}) => {
+const SearchBox = ({setInputValue, inputValue}) => {
 
     const handleChange = (e) => {
         const {value} = e.target
@@ -8,7 +8,7 @@ const SearchBox = ({setInputValue}) => {
     }
 
     return (
-        <input type="text" className="search-box" placeholder="Find a game" onChange={handleChange}/>
+        <input value={inputValue} type="text" className="search-box" placeholder="Find a game" onChange={handleChange}/>
     )
 }
 export default SearchBox

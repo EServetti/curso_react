@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import "../../styles/ItemListContainer/Item.css";
 
-const Item = ({ name, photo, onSale }) => {
+const Item = ({ id,name, thumbnail, onSale }) => {
   return (
-    <div className="item">
+    <Link className="item" to={`/${id}`} >
       {onSale && (
         <span className="on_sale">On Sale!</span>
       )}
       <span className="image_container">
-        <img src={photo} alt="image" />
+        <img src={thumbnail} alt="image" />
       </span>
-      <h3>{name || "Name not provided"} </h3>
-    </div>
+      <h3 style={{textAlign: "center"}}>{name || "Name not provided"} </h3>
+    </Link>
   );
 };
 

@@ -1,0 +1,42 @@
+.main-item-details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+}
+
+.game-image {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.75);
+}
+
+.game-info {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    opacity: 0.8;
+    color: white;
+    background-color: #4e56ae;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.game-info button {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+}
+
+.game-info img {
+    width: 30px;
+}
