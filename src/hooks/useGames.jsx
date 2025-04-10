@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
-import g from "../../games.json";
+import { getGames } from "../firebase";
 
 const useGames = () => {
   const [games, setGames] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchGames = () => {
-      setTimeout(() => {
-        setGames(g);  
-        setLoading(false);  
-      }, 1000);
+    const fetchGames = async () => {
+      try {
+        const g = await getGames()
+        setGames(g)
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false)
+      }
     };
 
     fetchGames();

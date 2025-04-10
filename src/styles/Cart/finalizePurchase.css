@@ -1,0 +1,40 @@
+.main-finalize-purchase {
+    position: absolute;
+    top: 5%; 
+    left: 30%; 
+    width: 40%;
+    height: 70%;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.finalize-top {
+    width: 100%;
+}
+
+.finalize-top button {
+    all: unset;
+    background-color: #192b7d;
+    padding: 5px;
+    border-radius: 5px 0 5px 0;
+    width: 30px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.finalize-top img {
+    width: 80%;
+}
+
+.main-finalize-purchase form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
